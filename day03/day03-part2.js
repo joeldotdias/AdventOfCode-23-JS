@@ -17,7 +17,7 @@ lines.forEach((line, y) => {
                 syms.push({x: x, y: y});
             }
             if(num != "") {
-                let realx = x === 0 ? 140 : x
+                let realx = x === 0 ? line.length : x
                 numsInRow.push({n: num, x1: realx - num.length, x2: realx - 1});
                 num = "";
             }
